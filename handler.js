@@ -820,8 +820,8 @@ module.exports = {
                 if (!('antiSticker' in chat)) chat.antiSticker = false
                 if (!('antiStickernokick' in chat)) chat.antiStickernokick = false
                 if (!('viewonce' in chat)) chat.viewonce = false
-                if (!('antiporn' in chat)) chat.antiporn = false
-                if (!('antiToxic' in chat)) chat.antiToxic = false
+                if (!('antiporn' in chat)) chat.antiporn = true
+                if (!('antiToxic' in chat)) chat.antiToxic = true
                 if (!isNumber(chat.expired)) chat.expired = 0
                 if (!("memgc" in chat)) chat.memgc = {}
                 if (!('antilinkig' in chat)) chat.antilinkig = false
@@ -836,11 +836,11 @@ module.exports = {
                 if (!('antilinktelenokick' in chat)) chat.antilinktelenokick = false
                 if (!('antilinkwame' in chat)) chat.antilinkwame = false
                 if (!('antilinkwamenokick' in chat)) chat.antilinkwamenokick = false
-                if (!('antilinkall' in chat)) chat.antilinkall = false
-                if (!('antilinkallnokick' in chat)) chat.antilinkallnokick = false
+                if (!('antilinkall' in chat)) chat.antilinkall = true
+                if (!('antilinkallnokick' in chat)) chat.antilinkallnokick = true
                 if (!('antilinktt' in chat)) chat.antilinktt = false
                 if (!('antilinkttnokick' in chat)) chat.antilinkttnokick = false
-                if (!('antibot' in chat)) chat.antibot = false
+                if (!('antibot' in chat)) chat.antibot = true
                 if (!('autodl' in chat)) chat.autodl = false
                 if (!('autohd' in chat)) chat.autohd = false
                 if (!('autobio' in chat)) chat.autobio = false
@@ -861,8 +861,8 @@ module.exports = {
                 sPromote: '',
                 sDemote: '',
                 delete: false, 
-                antiLink: false,
-                antiLinknokick: false,
+                antiLink: true,
+                antiLinknokick: true,
                 antiSticker: false, 
                 antiStickernokick: false, 
                 viewonce: false,
@@ -875,7 +875,7 @@ module.exports = {
                 antilinktwitnokick: false, 
                 antilinkfb: false, 
                 antilinkfbnokick: false, 
-                antilinkall: false, 
+                antilinkall: true, 
                 antilinkallnokick: false, 
                 antilinkwame: false,
                 antilinkwamenokick: false, 
